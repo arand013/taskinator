@@ -271,3 +271,20 @@ var dragLeaveHandler = function(event) {
     taskListEl.removeAttribute("style");
    }
 }
+
+//Save to localStorage 
+var tasks = [];
+
+var saveTasks = function() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+};
+
+var loadTasks = function() {
+  var savedTasks = localStorage.getItem("tasks");
+
+  if (savedTasks === null) {
+    return false;
+  }
+
+  savedTasks = JSON.parse(savedTasks);
+
