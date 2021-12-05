@@ -264,3 +264,10 @@ var dropTaskHandler = function(event) {
   }
   saveTasks();
 };
+
+var dragLeaveHandler = function(event) {
+  var taskListEl = event.target.closest(".task-list");
+   if (taskListEl) {
+    taskListEl.removeAttribute("style");
+   }
+}
