@@ -1,11 +1,9 @@
 # taskinator
 
-[Click Here To Visit!]()
+[Click Here To Visit!](https://arand013.github.io/taskinator/)
 ## Languages 
 - HTML
-<br>
 - CSS
-<br>
 - Javascript
 
 ## Tests
