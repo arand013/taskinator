@@ -1,6 +1,7 @@
-var pageContentEl= document.querySelector("#page-content");
-var taskIdCOunter = 0;
-var fromEl = docu.querySelector("#task-form");
+
+var pageContentEl = document.querySelector("#page-content");
+var taskIdCounter = 0;
+var formEl = document.querySelector("#task-form");
 var tasksInProgressEl = document.querySelector("#tasks-in-progress");
 var tasksCompletedEl = document.querySelector("#tasks-completed");
 
