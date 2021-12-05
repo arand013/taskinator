@@ -118,3 +118,19 @@ var createTaskActions = function(taskId) {
 };
 
   formEl.addEventListener("submit", taskFormHandler);
+
+  var taskButtonHandler = function(event) {
+    // get target element from event
+    var targetEl = event.target;
+  
+    // edit button was clicked
+    if (targetEl.matches(".edit-btn")) {
+      var taskId = targetEl.getAttribute("data-task-id");
+      editTask(taskId);
+    } 
+    // delete button was clicked
+    else if (targetEl.matches(".delete-btn")) {
+      var taskId = targetEl.getAttribute("data-task-id");
+      deleteTask(taskId);
+    }
+};
